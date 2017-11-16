@@ -1,0 +1,12 @@
+(pra quem estiver com pressa, já deixei os comandos para instalar com pip ou apt-get)
+http://scikit-learn.org/stable/install.html
+$ pip install -U scikit-learn
+https://pandas.pydata.org/pandas-docs/stable/install.html
+$ pip install pandas
+https://matplotlib.org/users/installing.html
+$ sudo apt-get install python3-matplotlib
+Para quem quiser atualizar todos os pacotes do python, o comando abaixo é útil:
+$ pip install -U `pip list --format=columns --outdated | awk '!/Package|---/{ print $1}'`
+OBS:
+"pip3" em vez de "pip" pode ser necessário, dependendo das configurações
+"sudo" ou "sudo -H" podem ser necessários em alguns casos
